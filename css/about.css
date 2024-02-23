@@ -83,4 +83,32 @@ th {
     .body{
         height: 900vh;
     }
+    #video{
+        width: 200px;
+        height: 300px;
+    }
+    .maintitle {
+        /* Add your styles for .maintitle here */
+    }
+    th, td{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .maintitle{
+        font-size: 5.5vw;
+        line-height: 6vw;
+    }
+    .maintopic{
+        font-size: 1.8vw;
+    }
+    .highlight{
+        font-size: 2vw;
+    }
+    .formula, .form2{
+        font-size: 1.9vw;
+    }
+    .ans{
+        font-size: 1.7vw;
+    }
+
 }
