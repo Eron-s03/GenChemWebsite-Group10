@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Young Serif', serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+body {
+    background-color: #fefefe;
+    overflow-x: hidden;
+}
+
+.logo span {
+    color: red;
+    font-size: 40px;
+    top: 14px;
+    font-weight: 700;
+    position: fixed;
+}
+
+.logo {
+    color: #fefefe;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #37b182;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 100px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 25px 25px;
+    transition: 0.4s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a.active {
+    color: #fefefe;
+    border-top: 5px solid #fefefe;
+}
+
+.nav-bar ul li a:hover {
+    color: red;
+    border-top: 5px solid red;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .user-img{
+        display: none;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+        transition: transform 0.3s;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #37b182;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 1000;
+    }
+
+    .nav-bar.active {
+        height: 500px;
+        opacity: 1;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+}

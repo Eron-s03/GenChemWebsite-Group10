@@ -1,0 +1,38 @@
+.maintopic{
+    font-size: 3vw;
+    color: #37b182;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.body {
+    min-height: 120vh;
+    width: 100%;
+    padding: 0 10%;
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    z-index: 0;
+    /* Adjusted z-index */
+}
+
+.container1 {
+    z-index: 1;
+    position: relative;
+}
+
+@media only screen and (max-width: 900px){
+    marquee{
+        padding: 50px;
+        font-size: 3vw;
+        height: 400px;
+    }
+}

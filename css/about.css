@@ -1,0 +1,86 @@
+.body {
+    height: 1300vh;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    background: #dcdbff;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 400vh;
+    z-index: 0;
+    /* Adjusted z-index */
+}
+
+.container1 {
+    z-index: 1;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+}
+.maintitle{
+    color: #37b182;
+    font-size: 4vw;
+    line-height: 5vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.maintopic{
+    padding: 50px;
+    color: #272626;
+    font-size: 1.3vw;
+}
+
+.highlight{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.formula{
+    font-size: 1.5vw;
+    padding-left: 40px;
+}
+.form2{
+    font-size: 1.5vw;
+    padding-left: 30px;
+}
+.ans{
+    font-size: 1.3vw;
+    padding: 10px 50px;
+
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    margin: 50px auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #272626;
+    padding: 15px;
+    text-align: center;
+    color: #272626;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+@media only screen and (max-width: 900px){
+    .body{
+        height: 900vh;
+    }
+}
