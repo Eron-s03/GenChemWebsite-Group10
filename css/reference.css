@@ -31,8 +31,11 @@
 
 @media only screen and (max-width: 900px){
     marquee{
-        padding: 50px;
+        padding: 50px 20px;
         font-size: 3vw;
         height: 400px;
+    }
+    .maintopic{
+        font-size: 4vw;
     }
 }
