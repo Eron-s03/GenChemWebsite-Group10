@@ -117,16 +117,14 @@ particlesJS('particles-js', {
   }
 });
 
-// Check if the filename is about.html
 if (window.location.pathname.includes("about.html")) {
-  // Modify the value of the parameter
   particlesJS('particles-js', {
       "particles": {
           "number": {
               "value": 200,
               "density": {
                   "enable": true,
-                  "value_area": 1800 // Change value to 2000
+                  "value_area": 1800
               }
           },
           "color": {
